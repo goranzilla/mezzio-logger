@@ -1,0 +1,33 @@
+{
+    "name": "goranzilla/mezzio-logger",
+    "type": "library",
+    "description": "",
+    "keywords": [
+        "mezzio",
+        "middleware",
+        "logging",
+        "logger",
+        "sentry"
+    ],
+    "authors": [
+        {
+            "name": "Goran Tomic",
+            "email": "goran.tomic@diversitas.ch"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "monolog/monolog": "^2.2"
+    },
+    "suggest": {
+        "sentry/sdk": "Allow sending log messages to Sentry.io"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Goranzilla\\Mezzio\\Logger\\": "src/"
+        }
+    }
+}
